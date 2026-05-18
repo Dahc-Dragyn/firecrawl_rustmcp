@@ -4,6 +4,12 @@ A blazing-fast, ultra-lightweight, and zero-runtime-dependency Model Context Pro
 
 This server replaces heavy, process-hogging Node.js/npm MCP instances with a standalone compiled native binary (~4.5 MB), consuming virtually zero idle memory (~3-5MB RAM) and utilizing the high-performance **Tokio** asynchronous event loop.
 
+> [!NOTE]
+> **Architecture & How it Works:**
+> This native Rust server is a lightning-fast translation bridge running directly on your host machine. It communicates via standard I/O (stdio) with your AI client, and routes scraping requests to the **Firecrawl HTTP Engine**.
+> The Firecrawl HTTP Engine itself is a separate backend component that can run either **locally inside a self-hosted Docker container** (listening on `http://localhost:3002`) or **in the cloud** (accessible at `https://api.firecrawl.dev`).
+> For pure offline protocol validation, the repository also includes a zero-dependency local Python `mock_engine.py`!
+
 ---
 
 ## 🛠️ Exposed Tools
