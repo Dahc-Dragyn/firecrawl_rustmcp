@@ -1,0 +1,13 @@
+# Rust build artifacts
+target/
+
+# Python cache & virtual environment
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,1 @@
+{"jsonrpc": "2.0", "method": "tools/call", "params": {"name": "firecrawl_scrape", "arguments": {"url": "https://example.com"}}, "id": 1}
